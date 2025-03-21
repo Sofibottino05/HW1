@@ -100,10 +100,10 @@ int main2() {
 
 int main() {
 
-    constexpr const char* f1_compile = "Hola";
-    constexpr const char* f2_compile = "Hola";
+    constexpr const char* f1_compile = "Hola soy sofi bottino y la rompi en la HW1";
+    constexpr const char* f2_compile = "Hola soy sofi bottino y la rompi en la HW1";
 
-    constexpr bool resultado_string = sonIguales("Hola"sv, "Hola"sv);
+    constexpr bool resultado_string = sonIguales("Hola soy sofi bottino y la rompi en la HW1"sv, "Hola soy sofi bottino y la rompi en la HW1"sv);
     constexpr bool resultado_char = sonIgualesCompileTime(f1_compile, f2_compile);
 
     static_assert(resultado_string, "Las frases con string_view deberían ser iguales");
